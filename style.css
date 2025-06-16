@@ -71,12 +71,24 @@ img {
     color: white;
     background-color: rgb(0, 0, 0);
 }
+
+.brand h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color:white;
+}
+
+.brand h1 span {
+    color: black;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 600;
 }
 #one {
-    background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+    background: linear-gradient(60deg, #1984ff 0%,  #b2b2b9 80%);
+    
     background-size: cover;
     background-position: top center;
     z-index: 2;
@@ -86,7 +98,7 @@ h1 {
     max-width: 120px;
     margin: 0 auto;
     padding: 0,50px;
-    justify-content: flex-start:
+    justify-content: flex-start;
 
 }
 
@@ -275,7 +287,7 @@ h1 {
 
 #projects .project-info h1{
     font-size: 3rem;
-    font-width: 500;
+    font-weight: 500;
 }
 
 #projects .project-info p{
@@ -358,6 +370,7 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 20px;
+    
 
 }
 
@@ -388,28 +401,7 @@ section {
     font-size: 2rem;
 }
 
-/* #about .col-left .about-img{
-     height: 100%;
-     width: 100%;
-     position: relative;
-     border: 10px solid black;
-}
 
-#about .col-left .about-img::after {
-    content: '';
-    position: absolute;
-    left: -33px;
-    top: 19px;
-    height: 98%;
-    width: 98%;
-    border: 7px solid red;
-    /* z-index: -1; 
-} */
-
-#about .col-left .about-img {
-    position: relative;
-     /* Inner border */
-}
 
 #about .col-left .about-img::after {
     content: '';
@@ -427,12 +419,20 @@ section {
     flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
+    background: linear-gradient(60deg, #1984ff 0%,  #b2b2b9 80%);
+    width: 100vw;
+     margin-left: calc(-50vw + 50%);
+      padding: 60px 0;
 }
 
-/* #contact .contact-items {
-    width: 100px;
+#contact .contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 0 20px; /* Prevents edge sticking */
+}
 
-} */
+
 
 #contact .contact-item {
     position: relative;
@@ -502,25 +502,6 @@ section {
     margin: 5px 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #contact .contact-item:hover {
     box-shadow: 0px 0px 5px 0 #0000002c
     
@@ -557,6 +538,119 @@ section {
     line-height:1.6rem;
     font-weight: 500;
 }
+
+.footer {
+    background-image: linear-gradient(60deg, #1984ff 0%, #888e95 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.footer.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between elements */
+}
+
+/* Brand name positioning */
+.brand {
+    order: 1; /* Moves to top */
+}
+
+/* Job title */
+.footer h2 {
+    order: 2; /* Comes after name */
+    margin: 5px 0; /* Reduced spacing */
+}
+
+/* Social icons container */
+.social-icon {
+    order: 3; /* Comes after job title */
+    margin-top: 10px;
+}
+
+/* Copyright text */
+.footer p {
+    order: 4; /* Bottom position */
+    margin-top: 20px;
+}
+
+/* #footer .social-icon {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer .social.item{
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+} */
+
+
+
+/* Footer Styles - Won't affect other sections */
+.footer {
+  background: linear-gradient(60deg, #1984ff 0%,  #b2b2b9 80%); /* Dark blue background */
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer .container {
+    max-width: 1200;
+    margin: 0 auto;
+    display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.footer .brand h1 {
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.footer .brand h1 span {
+  color: #000000; /* Gold accent color */
+}
+
+.footer h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 5px 0 15px;
+  letter-spacing: 1px;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 20px;
+}
+
+/* Social Icons (if you keep them) */
+.footer .social-icon {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.footer .social-item img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.footer .social-item img:hover {
+  transform: scale(1.1);
+}
+
 
 
 
