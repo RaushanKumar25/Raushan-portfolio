@@ -449,9 +449,9 @@ section {
 
 #about .col-right h2 {
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 200;
     letter-spacing: 1.2rem;
-    margin-bottom:  10px;
+    margin-bottom:  40px;
 }
 
 #about .col-right p {
@@ -794,7 +794,7 @@ section {
         height:100%;
     }
 
-    #about .about{
+    /* #about .about{
         flex-direction: row;
     }
     #about .col-left {
@@ -812,10 +812,10 @@ section {
     #about .col-right{
         text-align: left;
         padding: 30px;
-    }
-    #about .col-right h1 {
+    } */
+    /* #about .col-right h1 {
         text-align: left;
-    }
+    } */
     #contact .contact{
         flex-direction: column;
         padding: 100px 0;
