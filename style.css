@@ -139,7 +139,7 @@ h1 {
   font-weight: 600;
 }
 #one {
-    background: linear-gradient(60deg, #1984ff 0%,  #b2b2b9 80%);
+    background: linear-gradient(60deg, #1984ff 0%,  #dddded 80%);
     
     background-size: cover;
     background-position: top center;
@@ -715,23 +715,7 @@ section {
   transform: scale(1.1);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- @keyframes text_reveal_box{
+@keyframes text_reveal_box{
     50%{
         width: 100%;
         left:0;
@@ -794,7 +778,7 @@ section {
         height:100%;
     }
 
-    /* #about .about{
+    #about .about{
         flex-direction: row;
     }
     #about .col-left {
@@ -813,9 +797,10 @@ section {
         text-align: left;
         padding: 30px;
     } */
-    /* #about .col-right h1 {
+     #about .col-right h1 {
         text-align: left;
-    } */
+    }
+
     #contact .contact{
         flex-direction: column;
         padding: 100px 0;
